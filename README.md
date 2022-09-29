@@ -13,6 +13,12 @@ This project will be programmed in
 - Back End: PHP, HTML, and CSS
 While using MySQLWorkbench and Atom as our IDE
 
+## Completed
+- Homepage: Title, logo, search bar, search button
+
 ## Current Project Goals
-- Create a Home Page and a search bar
-- Create a Logo for our project
+- API
+- Database running
+- Search Page
+- Maybe update homepage design (add images?)
+- Loading image
