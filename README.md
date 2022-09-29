@@ -9,8 +9,8 @@ In other words, people who have limited ingredients in their home and have troru
 
 ## Programming Language
 This project will be programmed in
-- Front End: C++ and SQL
-- Back End: PHP, HTML, and CSS
+- Front End: HTML, and CSS
+- Back End: PHP, C++, and SQL
 While using MySQLWorkbench and Atom as our IDE
 
 ## Completed
