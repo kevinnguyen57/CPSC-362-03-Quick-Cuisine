@@ -17,6 +17,7 @@ body{
   line-height: 57px;
   /* identical to box height */
   color: #000000;
+  z-index: 5;
 }
 
 img{
@@ -24,7 +25,8 @@ img{
   width: 270px;
   height: 254.29px;
   left: 600px;
-  top: 80px;
+  top: 110px;
+  z-index:5;
 }
 
 .searchbar input[type=text]{
@@ -33,7 +35,7 @@ img{
   width: 582px;
   height: 65px;
   left: 445px;
-  top: 350px;
+  top: 370px;
 
   background: #FFFFFF;
   border-radius: 100px;
@@ -50,7 +52,7 @@ img{
   width: 103px;
   height: 80px;
   left: 925px;
-  top: 343px;
+  top: 363px;
   background: #FF9999;
   border-radius: 100px;
   padding: 6px 10px;
