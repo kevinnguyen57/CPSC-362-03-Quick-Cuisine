@@ -1,5 +1,5 @@
 
-<!DOCTYPE html>
+<!DOCTYPE html HOMEPAGE>
 <html>
 <head>
     <title>Home Page</title>
@@ -13,8 +13,8 @@
   </div>
 
   <div
-    style="box-sizing:border-box;border-radius:50%;position:absolute;
-    width:310px;height:271px;left:570px;top:95px;
+    style="box-sizing:border-box;border-radius:50%;position:fixed;
+    width:310px;height:271px;left:570px;top:95px;z-index:2;
     border:3px solid #FFFFFF;background: #F2E5B5;">
   </div>
 
@@ -25,10 +25,11 @@
 
   <div
   style="box-sizing: border-box;position: fixed; width: 461px; height: 76px;
-  left: 505px; top: 10px; background: #FFFFFF; border-radius: 100px;">
+  left: 505px; top: 10px; background: #FFFFFF; border-radius: 100px;
+  border: 4px solid #000000;z-index:3;">
     </div>
 
-  <!Light Green Background Box>
+  <!Light Green Background Box (Not Needed)>
   <div
   style="box-sizing: border-box;position: fixed;width: 1440px;
   height: 700px;left: 0px;top: 0px;z-index:-1;background: #DFE8C8;">
@@ -37,19 +38,19 @@
   <!Background Design>
   <div pic="BackGround">
     <img src="VegieBG.png" style="position:fixed;width:720px;height:916px;
-    left:29px;top:-15px;z-index: -1">
+    left:29px;top:-15px;z-index: -1;">
   </div>
 
   <div pic="BackGround2">
     <img src="VegieBG.png" style="position:fixed;width:720px;height:916px;
-    left:696px;top:-15px;z-index: -1">
+    left:696px;top:-15px;z-index: -1;">
   </div>
 
   <!Search Bar>
-  <div class = "searchbar">
+  <form class = "searchbar" action="search_page.html">
     <input type="text" placeholder="Search...">
     <button type="submit">Submit</button>
-  </div>
+  </form>
 
 </body>
 </html>
