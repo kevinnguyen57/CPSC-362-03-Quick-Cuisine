@@ -15,10 +15,10 @@ While using MySQLWorkbench and Atom as our IDE
 
 ## Completed
 - Homepage: Title, logo, search bar, search button
+- Search Page Design and Styled
+- Updated Homepage
 
 ## Current Project Goals
 - API
 - Database running
-- Search Page
-- Maybe update homepage design (add images?)
 - Loading image
