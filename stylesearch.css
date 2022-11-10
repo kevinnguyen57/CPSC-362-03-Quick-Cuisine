@@ -1,7 +1,4 @@
-body{
-  background: #DFE8C8;
-  height: 1650px;
-}
+
 
 img{
   position: fixed;
@@ -23,6 +20,23 @@ img{
   font-style: normal;
   font-weight: 600;
   font-size: 40px;
+  line-height: 57px;
+  /* identical to box height */
+  color: #000000;
+  z-index: 5;
+}
+
+.hero-title2{
+  position: absolute;
+  width: 450px;
+  height: 100px;
+  left: 580px;
+  top: -20px;
+
+  font-family: copperplate;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 60px;
   line-height: 57px;
   /* identical to box height */
   color: #000000;
@@ -68,3 +82,4 @@ img{
 
 .searchbar button:hover {
   background: #ff6666;
+}
