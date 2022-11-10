@@ -10,15 +10,15 @@ In other words, people who have limited ingredients in their home and have troru
 ## Programming Language
 This project will be programmed in
 - Front End: HTML, and CSS
-- Back End: PHP, C++, and SQL
-While using MySQLWorkbench and Atom as our IDE
+- Back End: JavaScript
+While using Atom and VS Code as our IDE
 
 ## Completed
 - Homepage: Title, logo, search bar, search button
 - Search Page Design and Styled
-- Updated Homepage
+- Updated Homepage: Added a nav tab drop down
+- Connected the API to the Website
 
 ## Current Project Goals
-- API
-- Database running
-- Loading image
+- Search Bar should work with the API
+- Second page should show recipes and images to a different website
