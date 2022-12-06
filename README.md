@@ -18,7 +18,9 @@ While using Atom and VS Code as our IDE
 - Search Page Design and Styled
 - Updated Homepage: Added a nav tab drop down
 - Connected the API to the Website
+- Search Bar works with the API
+- API provides a video link within the web application
+- Finalized the project
 
 ## Current Project Goals
-- Search Bar should work with the API
-- Second page should show recipes and images to a different website
+- Submit final project and video
