@@ -1,129 +1,119 @@
-
-<!DOCTYPE html HOMEPAGE>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <title>Home Page</title>
-
-    <link rel="stylesheet" type="text/css" href = "stylehome.css">
-    <style>
-    /* Style The Dropdown Button */
-  .dropbtn {
-    width:50px;
-    height:50px;
-    background-color: #4CAF50;
-    color: white;
-    padding: 16px;
-    font-size: 16px;
-    border: none;
-    cursor: pointer;
-    border-radius: 50px;
-  }
-
-  /* The container <div> - needed to position the dropdown content */
-  .dropdown {
-    position: fixed;
-    display: inline-block;
-    left: 1370px;
-  }
-
-  /* Dropdown Content (Hidden by Default) */
-  .dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-    border-radius: 20px;
-    font-family: copperplate;
-    font-style: normal;
-  }
-
-  /* Links inside the dropdown */
-  .dropdown-content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-  }
-
-  /* Change color of dropdown links on hover */
-  .dropdown-content a:hover {background-color: #EBCCB0}
-  
-  /* Show the dropdown menu on hover */
-  .dropdown:hover .dropdown-content {
-    display: block;
-  }
-
-  /* Change the background color of the dropdown button when the dropdown content is shown */
-  .dropdown:hover .dropbtn {
-    background-color: #3e8e41;
-  }
-
-  .dropdown-content {
-    right: 0;
-  }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quick Cuisine</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" 
+    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel = "stylesheet" href = "style.css">
 
 </head>
 <body>
 
-  <!Reference JS file>
-  <script src="main.js" type="module"></script>
-
-  <!Logo png>
-  <div pic="logo">
-    <img src="Quick_Cuisine_Logo.png">
-  </div>
-
-  <div
-    style="box-sizing:border-box;border-radius:50%;position:absolute;
-    width:310px;height:271px;left:570px;top:95px;z-index:2;
-    border:3px solid #FFFFFF;background: #F2E5B5;">
-  </div>
-
-  <!Title>
-  <div class="hero">
-    <h1 class = "hero-title">Quick Cuisine</h1>
+    <!Background Design>
+    <div pic="BackGround">
+      <img src="VegieBG.png" style="position:fixed;width:50%px;height:100%;
+      left:2%;top:-2%;z-index: -1;">
+    </div>
+  
+    <div pic="BackGround2">
+      <img src="VegieBG.png" style="position:fixed;width:40%;height:100%;
+      left:60%;top:-2%;z-index: -1;">
     </div>
 
-  <div
-  style="box-sizing: border-box;position: absolute; width: 461px; height: 76px;
-  left: 505px; top: 10px; background: #FFFFFF; border-radius: 100px;
-  border: 4px solid #000000;z-index:3;">
+    <div class = "dropdown">
+        <button class="dropbtn">?</button>
+        <div class="dropdown-content">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+        </div>
+      </div>
+  
+
+    <div class = "container">
+        <div class = "meal-wrapper">
+            <div class = "meal-search">
+                <div
+                    style="box-sizing: border-box; width: 461px;
+                    height: 60px; margin: auto; background: #0000; border-radius: 100px;
+                    border: 4px solid #000000;z-index:3;">
+                    <h2 class = "title">Quick Cuisine</h2>
+                </div>
+                <p>*****</p>
+                <!Logo png>
+                <div
+                    style="box-sizing:border-box;border-radius:50%;
+                    width:310px;height:271px; margin: auto; padding-left: 20px;
+                    z-index:2; border:3px solid #000;background: #F2E5B5;">
+                    <img src="Quick_Cuisine_Logo.png" style="
+                    width: 270px;height: 254.29px;z-index:5;padding: 15px;">
+                </div>
+
+                <div class = "meal-search-box">
+                    <input type = "text" class = "search-control"
+                    placeholder = "Enter an ingredient" id = "search-input">
+                    <button type = "submit" class = "search-btn btn" id = "search-btn">
+                        <i class = "fas fa-search"></i>
+                    </button>
+                </div>
+            </div>
+
+            <div class = "meal-result">
+                <h2 class = "title">Recipe Results</h2>
+                <div id = "meal">
+                    <!--meal item-->
+                    <!--<div class = "meal-item">
+                        <div class = "meal-img">
+                            <img src = "strawberry.jpg" alt = "food">
+                        </div>
+                        <div class = "meal-name">
+                            <h3>Strawberries</h3>
+                            <a href = "#" class = "recipe-btn"> Get Recipe</a>
+                        </div>
+                    </div>-->
+                    <!--End of meal item-->
+                </div>
+            </div>
+
+            <div class = "meal-details">
+                <!-- recipe close btn -->
+                <button type = "button" class = "btn recipe-close-btn"
+                id = "recipe-close-btn">
+                <i class = "fas fa-times"></i> 
+                </button>
+
+                <!-- meal content -->
+                <div class = "meal-details-content">
+                    <h2 class = "recipe-title">Meals Name Here</h2>
+                    <p class = "recipe-category">Category Name</p>
+                    <div class = "recipe-instruct">
+                        <h3>Instructions:</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            Culpa voluptas dolores, debitis sint, autem saepe 
+                            voluptate in magni eveniet eum amet voluptatum, neque 
+                            repellendus! Veritatis pariatur nulla ea? Ex, quibusdam!
+                        </p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            Ipsum repudiandae nostrum porro, cupiditate qui, cumque 
+                            nemo quidem at suscipit repellat, cum odit ex eum 
+                            tempora alias quos quae officiis! At?
+                        </p>
+                    </div>
+                    <div class = "recipe-meal-img">
+                        <img src = "strawberry.jpg" alt = " ">
+                    </div>
+                    <div class = "recipe-link">
+                        <a href = "#" target = "_blank">Watch Video</a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
-  <!Light Green Background Box (Not Needed)>
-  <div
-  style="box-sizing: border-box;position: fixed;width: 1440px;
-  height: 700px;left: 0px;top: 0px;z-index:-1;background: #DFE8C8;">
-  </div>
+    
 
-  <!Background Design>
-  <div pic="BackGround">
-    <img src="VegieBG.png" style="position:fixed;width:720px;height:916px;
-    left:29px;top:-15px;z-index: -1;">
-  </div>
-
-  <div pic="BackGround2">
-    <img src="VegieBG.png" style="position:fixed;width:720px;height:916px;
-    left:696px;top:-15px;z-index: -1;">
-  </div>
-
-  <!Search Bar>
-  <form class = "searchbar" action="search_page.html">
-    <input type="text" name="searchBar" id="searchBar" placeholder="Search..." value="Chicken" >
-    <button type="submit" name="searchBtn" id="searchBtn">Submit</button>
-  </form>
-
-  <div class = "dropdown">
-    <button class="dropbtn">?</button>
-    <div class="dropdown-content">
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="contacts.html">Contacts</a>
-    </div>
-  </div>
-
+    <script src = "script.js"></script>
 </body>
 </html>
