@@ -1,4 +1,63 @@
 
+.dropbtn {
+  width:50px;
+  height:50px;
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  border-radius: 50px;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: fixed;
+  display: inline-block;
+  /*left: 1370px;*/
+  padding-top: 5px;
+  left: 95%;
+  z-index: 10;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: fixed;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  border-radius: 20px;
+  font-family: copperplate;
+  font-style: normal;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #EBCCB0}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+  background-color: #3e8e41;
+}
+
+.dropdown-content {
+  right: 0;
+}
 
 img{
   position: fixed;
@@ -30,8 +89,8 @@ img{
   position: absolute;
   width: 450px;
   height: 100px;
-  left: 580px;
-  top: -20px;
+  left: 42%;
+  top: -2%;
 
   font-family: copperplate;
   font-style: normal;
@@ -43,43 +102,4 @@ img{
   z-index: 5;
 }
 
-.searchbar input[type=text]{
-  box-sizing: border-box;
-  position: fixed;
-  width: 582px;
-  height: 45px;
-  left: 445px;
-  top: 2.5px;
 
-  background: #FFFFFF;
-  border-radius: 100px;
-
-  padding: 20px;
-  border: none;
-  margin-top: 8px;
-  margin-right: 16px;
-  font-size: 25px;
-
-  z-index:4;
-}
-
-.searchbar button {
-  position: fixed;
-  width: 80px;
-  height: 60px;
-  left: 960px;
-  top: -5px;
-  background: #FF9999;
-  border-radius: 100px;
-  padding: 6px 10px;
-  margin-top: 8px;
-  margin-right: 16px;
-  font-size: 17px;
-  border: none;
-  cursor: pointer;
-  z-index:5;
-}
-
-.searchbar button:hover {
-  background: #ff6666;
-}
