@@ -1,1 +1,1 @@
-
+CRC Model isn't possible because we don't have any classes
